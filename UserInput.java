@@ -1,13 +1,13 @@
 import java.util.Random; // Random number generation 
 import java.util.Scanner; // need for reading user input
 
-public class Mentalism {
+public class MindReader {
   public static void main(String[] args) {
     // Create random number generator 
     Random randomGenerator = new Random();
     final int maxValue = 5; 
     final int minValue = 1; 
-    // Generate random number in range from 1 to 5
+    // Generate random number in range from 1 to 10
     int numberToGuess = randomGenerator.nextInt(maxValue) + minValue; 
     int numberToAdd = numberToGuess * 2; 
     // Scanner named keyboardInput used to read inout
@@ -19,7 +19,7 @@ public class Mentalism {
     String name = keyboardInput.nextLine();
     // System.out.println() adds new lines (\n) at the end of the output
     System.out.println("Welcome, " + name + ", we'll perform some mind reading.");
-    System.out.println("Think of a number between 1 and 5");
+    System.out.println("Think of a number between 1 and 10");
     System.out.print("Hit Enter/Return when ready for the next step.");
     // Read input as String but don't save it, since it's blank
     keyboardInput.nextLine();
